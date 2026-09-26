@@ -1,54 +1,207 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La mia Web Radio e il mio Sito</title>
+    <title>Onda Cosmica • Il Suono del Cosmic & Afro (1978-1985)</title>
     <style>
+        /* SFONDO PSICHEDELICO E NOTTURNO STILE COSMIC */
         body {
-            background-color: #121212;
-            color: #00ff66;
+            background: linear-gradient(135deg, #05050f 0%, #12021f 50%, #001a14 100%);
+            background-attachment: fixed;
+            color: #00ffcc;
             font-family: 'Courier New', Courier, monospace;
             text-align: center;
-            padding: 50px 20px;
+            padding: 30px 15px;
+            margin: 0;
         }
+        
+        header {
+            border-bottom: 3px solid #ff007f;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(255, 0, 127, 0.2);
+        }
+
         h1 {
-            font-size: 2.2em;
-            text-shadow: 0 0 10px #00ff66;
+            font-size: 2.5em;
+            color: #ff007f;
+            text-shadow: 0 0 15px #ff007f, 0 0 30px #7b00ff;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
         }
-        p {
-            font-size: 1.1em;
-            color: #ccc;
+
+        .subtitle {
+            color: #ffcc00;
+            font-size: 1.2em;
+            letter-spacing: 4px;
+            text-shadow: 0 0 8px #ffcc00;
         }
-        .player-box {
-            background: #1e1e1e;
-            border: 2px dashed #00ff66;
-            display: inline-block;
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: rgba(15, 15, 25, 0.85);
+            border: 2px solid #00ffcc;
+            border-radius: 15px;
             padding: 30px;
-            margin-top: 30px;
-            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.25);
+            backdrop-filter: blur(5px);
+            text-align: left;
         }
+
+        h2 {
+            color: #ffcc00;
+            border-bottom: 1px dashed #00ffcc;
+            padding-bottom: 8px;
+            font-size: 1.4em;
+            text-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
+        }
+
+        p {
+            line-height: 1.7;
+            color: #ddd;
+        }
+
+        /* IL BOX DEL LETTORE UNICO */
+        .player-box {
+            background: linear-gradient(90deg, #1a0028, #001a1a);
+            border: 2px solid #ff007f;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(255, 0, 127, 0.3);
+        }
+
+        #current-track-title {
+            color: #00ffcc;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
+        }
+
         audio {
             width: 100%;
-            margin-top: 15px;
+            outline: none;
+        }
+
+        /* LA SCALETTA / PLAYLIST */
+        .playlist {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .playlist li {
+            background: rgba(25, 25, 40, 0.9);
+            border: 1px solid #444;
+            padding: 14px 18px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .playlist li:hover {
+            border-color: #00ffcc;
+            background: rgba(0, 255, 204, 0.1);
+            transform: translateX(5px);
+        }
+
+        .playlist li.active {
+            border-color: #ff007f;
+            background: rgba(255, 0, 127, 0.2);
+            color: #ff007f;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+        }
+
+        .dj-list {
+            background: rgba(20, 20, 35, 0.9);
+            padding: 18px;
+            border-left: 5px solid #ffcc00;
+            border-radius: 5px;
+            margin: 25px 0;
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: #777;
+            border-top: 1px dashed #333;
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
 
-    <h1>// LA MIA BASE LIBERA & WEB RADIO //</h1>
-    <p>Sito gratuito per sempre • Zero pubblicità • Musica autoprodotta</p>
+    <header>
+        <h1>// ONDA COSMICA //</h1>
+        <div class="subtitle">AFRO • COSMIC • ELETTRONICA • BRASILIANA</div>
+    </header>
 
-    <div class="player-box">
-        <h3>Ascolta la mia musica</h3>
-        <p style="font-size: 0.85em; color: #888;">Premi play per far partire il brano</p>
+    <div class="container">
+        <h2>Il Viaggio del Suono Continuo</h2>
+        <p>Un portale dedicato alle radici della febbre afro e cosmic. Dalle notti ipnotiche della <strong>Baia degli Angeli</strong> e del mitico <strong>Cosmic</strong> di Lazise, passando per il <strong>Melamara</strong>, il <strong>Typhoon</strong> e il <strong>Chicago</strong>. Luoghi di culto dove la musica era un rito tribale e futuristico guidato da pionieri come Daniele Baldelli, Mozart, Rudy Franceschi e Tosi.</p>
+
+        <div class="dj-list">
+            <strong>I Templi:</strong> Baia degli Angeli, Cosmic, Melamara, Typhoon, Chicago.<br>
+            <strong>I Maestri della Consolle:</strong> Baldelli, Tosi, Grandi Claudio, Mozart, Rudy Franceschi...
+        </div>
+
+        <h2>Jukebox Ufficiale</h2>
         
-        <!-- Qui metteremo il link della tua musica -->
-        <audio controls>
-            <source src=" https://archive.org/download/ondacosmica.it/Il_parcheggio_del_Cosmic.mp3 " type="audio/mpeg">
-            Il tuo browser non supporta l'elemento audio.
-        </audio>
+        <!-- LETTORE UNICO IN ALTO -->
+        <div class="player-box">
+            <div id="current-track-title">Seleziona un brano dalla scaletta sotto per iniziare il viaggio 🌌</div>
+            <audio id="audio-player" controls></audio>
+        </div>
+
+        <!-- LA SCALETTA DEI BRANI -->
+        <p>Scegli la traccia dalla scaletta:</p>
+        <ul class="playlist" id="playlist">
+            <li onclick="playTrack('INCOLLA_QUI_IL_LINK_DEL_PRIMO_MP3.mp3', '1. Il parcheggio del Cosmic', this)">
+                <span>1. Il parcheggio del Cosmic</span>
+                <span>▶ Play</span>
+            </li>
+            <li onclick="playTrack('INCOLLA_QUI_IL_LINK_DEL_SECONDO_MP3.mp3', '2. Titolo Secondo Brano', this)">
+                <span>2. Titolo Secondo Brano</span>
+                <span>▶ Play</span>
+            </li>
+            <li onclick="playTrack('INCOLLA_QUI_IL_LINK_DEL_TERZO_MP3.mp3', '3. Titolo Terzo Brano', this)">
+                <span>3. Titolo Terzo Brano</span>
+                <span>▶ Play</span>
+            </li>
+        </ul>
+
     </div>
+
+    <footer>
+        <p>Progetto indipendente, libero e gratuito • 100% Autogestito • Nessun copyright</p>
+    </footer>
+
+    <!-- SCRIPT DEL GIUOCO (GESTISCE IL LETTORE E LA SCALETTA) -->
+    <script>
+        const audioPlayer = document.getElementById('audio-player');
+        const trackTitle = document.getElementById('current-track-title');
+
+        function playTrack(mp3Url, titleName, element) {
+            audioPlayer.src = mp3Url;
+            audioPlayer.play();
+            trackTitle.innerText = "In riproduzione: " + titleName;
+
+            const items = document.querySelectorAll('.playlist li');
+            items.forEach(li => li.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
