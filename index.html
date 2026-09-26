@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia Web Radio e il mio Sito</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #00ff66;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 2.2em;
+            text-shadow: 0 0 10px #00ff66;
+        }
+        p {
+            font-size: 1.1em;
+            color: #ccc;
+        }
+        .player-box {
+            background: #1e1e1e;
+            border: 2px dashed #00ff66;
+            display: inline-block;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        audio {
+            width: 100%;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>// LA MIA BASE LIBERA & WEB RADIO //</h1>
+    <p>Sito gratuito per sempre • Zero pubblicità • Musica autoprodotta</p>
+
+    <div class="player-box">
+        <h3>Ascolta la mia musica</h3>
+        <p style="font-size: 0.85em; color: #888;">Premi play per far partire il brano</p>
+        
+        <!-- Qui metteremo il link della tua musica -->
+        <audio controls>
+            <source src="TUO_LINK_AUDIO_QUI.mp3" type="audio/mpeg">
+            Il tuo browser non supporta l'elemento audio.
+        </audio>
+    </div>
+
+</body>
+</html>
